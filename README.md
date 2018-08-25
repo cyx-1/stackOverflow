@@ -7,7 +7,7 @@ You can disable this feature for just Sublime Text by issuing the following comm
 defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
 https://gist.github.com/kconragan/2510186
 
-### Question: What is the package that needs to be installed in Sublime to get markdown support? [sublime] 
+### Question: What is the package that needs to be installed in Sublime to get markdown support? [sublime] [markdown]
  * Download MarkDownPreview: Cmd-Shift-P - Package Control: Install Package
  * Use: Cmd-Shift-P - Markdown Preview: preview in browser
 
@@ -24,3 +24,6 @@ do
 done < "${1:-/dev/stdin}"
 ```
 https://stackoverflow.com/a/7045517
+
+### Question: How to render markdown files in chrome? [chrome] [markdown]
+Download this Chrome extension: Markdown Preview Plus
