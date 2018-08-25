@@ -48,3 +48,5 @@ git push origin
 # use space as delimiter and extract first field
 cut -d' ' -f1
 ```
+### Q: What is the best technique to remember things?
+anki, github stackOverflow
