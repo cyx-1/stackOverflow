@@ -28,3 +28,10 @@ https://stackoverflow.com/a/7045517
 ### Q: How to render markdown files in chrome? [chrome] [markdown]
 Download this Chrome extension: Markdown Preview Plus
 
+### Q: What are some basic command line to be productive in GIT [git]
+```
+git clone <url>
+git add .
+git commit -m 'test'
+git push origin
+```
