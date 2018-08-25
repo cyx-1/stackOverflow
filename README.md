@@ -10,3 +10,17 @@ https://gist.github.com/kconragan/2510186
 ### Question: What is the package that needs to be installed in Sublime to get markdown support? [sublime] 
  * Download MarkDownPreview: Cmd-Shift-P - Package Control: Install Package
  * Use: Cmd-Shift-P - Markdown Preview: preview in browser
+
+### Question: what are some basic concepts for bash shell? [bash]
+command line editing, command history, shell and subshell, double quote vs single quote, startup scripts
+
+### Question: difference between double quote vs single quote in bash? [bash]
+
+### Question: How to have bash script read from file or from standard in [bash]
+```
+while read line
+do
+  echo "$line"
+done < "${1:-/dev/stdin}"
+```
+https://stackoverflow.com/a/7045517
