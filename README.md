@@ -55,7 +55,8 @@ http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
 cut -d' ' -f1
 ```
 ### Q: What is the best technique to remember things? [memory] [open]
-anki, github stackOverflow
+anki, github stackOverflow, CDN in Dropbox
+
 Make a search site that uses elasticsearch
 https://github.com/appbaseio/reactivesearch/blob/dev/README.md#4-live-demos
 
