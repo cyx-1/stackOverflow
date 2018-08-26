@@ -43,9 +43,11 @@ git commit -a -m 'A simple msg' # stage and commit with a msg
 git status # show current status
 git push # push commits to current remote
 git push origin # push commits to remote
-git pull # get the latest from remote
+git fetch # get the latest info from remote
+git pull # update local branch with the latest from remote
 git ls # if the alias is setup, git ls shows commit history: git config --global alias.ls 'log --pretty=format:"%C(yellow)%h %cd%Cblue [%cn] %Cred%d - %Creset%s" --decorate --date=format:"%Y-%m-%d %H:%M:%S"' --replace-all
-git cmp "msg" # git config --global alias.cmp '!f() { git add -A && git commit -m "$@" && git push; }; f'
+git ls origin/master # shows commit history for a remote branch
+git cmp "msg" # add, commit and push, all in one! git config --global alias.cmp '!f() { git add -A && git commit -m "$@" && git push; }; f'
 ```
 http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
 
