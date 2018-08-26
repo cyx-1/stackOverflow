@@ -42,7 +42,9 @@ git clone <url>
 git commit -a -m 'A simple msg' # stage and commit with a msg
 git push origin # push commits to remote
 git pull # get the latest from remote
+git ls # if the alias is setup, git ls shows commit history: git config --global alias.ls 'log --pretty=format:"%C(yellow)%h %cd%Cblue [%cn] %Cred%d - %Creset%s" --decorate --date=short'
 ```
+http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
 
 ### Q: What is a good example of cut command? [Unix]
 ```
