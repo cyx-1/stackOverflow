@@ -3,7 +3,7 @@ In user setting, change "ignored_packages": ["Vintage"] to ignored_packages": []
 https://www.sublimetext.com/docs/2/vintage.html
 
 ### Q: Sublime on Mac is not allowing keys to be repeated. How to resolve this? [sublime] 
-You can disable this feature for just Sublime Text by issuing the following command in your terminal (*not* the Sublime Text console):
+You can disable this feature for just Sublime Text by issuing the following command in your terminal (*not* the Sublime Text console), restart required:
 defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
 https://gist.github.com/kconragan/2510186
 
