@@ -39,8 +39,9 @@ Download this Chrome extension: Markdown Preview Plus
 ### Q: What are some basic command line to be productive in GIT [git]
 ```
 git clone <url>
-git commit -a -m 'A simple msg'
-git push origin
+git commit -a -m 'A simple msg' # stage and commit with a msg
+git push origin # push commits to remote
+git pull # get the latest from remote
 ```
 
 ### Q: What is a good example of cut command? [Unix]
@@ -48,5 +49,13 @@ git push origin
 # use space as delimiter and extract first field
 cut -d' ' -f1
 ```
-### Q: What is the best technique to remember things?
+### Q: What is the best technique to remember things? [memory]
 anki, github stackOverflow
+
+### Q: Where are the cheatsheets for common computing topics [cheatsheet] [vi] [git] [chrome] [awk] [sed]
+ * [General Cheatsheets](http://overapi.com/)
+ * [Git Quick Reference](https://www.dropbox.com/s/i3hzp531puvfsnc/git%20quick%20reference.pdf?dl=0), [Git Quick Reference 2](https://www.dropbox.com/s/59qpq9juxmcamou/git%20quick%20reference%202.pdf?dl=0)
+ * [Vim Quick Reference](https://www.dropbox.com/s/sfdiwdhsr4whthe/vim%20quick%20reference.png?dl=0)
+ * [Chrome Quick Reference](https://www.dropbox.com/s/ll1cai8kpa68gm1/chrome%20quick%20reference%20mac.pdf?dl=0)
+ * [SED Quick Reference](https://www.dropbox.com/s/mj4lswzvib1baxq/sed%20quick%20reference.png?dl=0)
+ * [AWK Quick Reference](https://www.dropbox.com/s/qyyfxm4kibbdx2x/awk%20quick%20reference.pdf?dl=0)
