@@ -12,7 +12,7 @@ https://gist.github.com/kconragan/2510186
  * Use: Cmd-Shift-P - Markdown Preview: preview in browser
 
 ### Q: What are some basic concepts for bash shell? [bash]
-command line editing (set -o vi), command history (!), shell and subshell, double quote vs single quote, startup scripts, program argument ($1, $#), continuing line (\\), variable (setting a variable must not have space before and after =: test='hello')
+command line editing (set -o vi), command history (!), shell and subshell, double quote vs single quote, startup scripts, program argument ($1, $#, $@), continuing line (\\), variable (setting a variable must not have space before and after =: test='hello')
 
 ### Q: What is the difference between double quote vs single quote in bash? [bash]
 Single quotes won't interpolate anything, but double quotes will.
