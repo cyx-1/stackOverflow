@@ -40,9 +40,12 @@ Download this Chrome extension: Markdown Preview Plus
 ```
 git clone <url>
 git commit -a -m 'A simple msg' # stage and commit with a msg
+git status # show current status
+git push # push commits to current remote
 git push origin # push commits to remote
 git pull # get the latest from remote
-git ls # if the alias is setup, git ls shows commit history: git config --global alias.ls 'log --pretty=format:"%C(yellow)%h %cd%Cblue [%cn] %Cred%d - %Creset%s" --decorate --date=short'
+git ls # if the alias is setup, git ls shows commit history: git config --global alias.ls 'log --pretty=format:"%C(yellow)%h %cd%Cblue [%cn] %Cred%d - %Creset%s" --decorate --date=format:"%Y-%m-%d %H:%M:%S"' --replace-all
+git cmp "msg" # git config --global alias.cmp '!f() { git add -A && git commit -m "$@" && git push; }; f'
 ```
 http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
 
