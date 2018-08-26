@@ -36,7 +36,7 @@ https://stackoverflow.com/a/7045517
 ### Q: How to render markdown files in chrome? [chrome] [markdown]
 Download this Chrome extension: Markdown Preview Plus
 
-### Q: What are some basic command line to be productive in GIT [git]
+### Q: What are some basic command line to be productive in GIT [git] [open]
 ```
 git clone <url>
 git commit -a -m 'A simple msg' # stage and commit with a msg
@@ -54,8 +54,10 @@ http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
 # use space as delimiter and extract first field
 cut -d' ' -f1
 ```
-### Q: What is the best technique to remember things? [memory]
+### Q: What is the best technique to remember things? [memory] [open]
 anki, github stackOverflow
+Make a search site that uses elasticsearch
+https://github.com/appbaseio/reactivesearch/blob/dev/README.md#4-live-demos
 
 ### Q: Where are the cheatsheets for common computing topics [cheatsheet] [vi] [git] [chrome] [awk] [sed]
  * [General Cheatsheets](http://overapi.com/)
