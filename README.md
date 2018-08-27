@@ -69,3 +69,6 @@ https://github.com/appbaseio/reactivesearch/blob/dev/README.md#4-live-demos
  * [Chrome Quick Reference](https://www.dropbox.com/s/ll1cai8kpa68gm1/chrome%20quick%20reference%20mac.pdf?dl=0)
  * [SED Quick Reference](https://www.dropbox.com/s/mj4lswzvib1baxq/sed%20quick%20reference.png?dl=0)
  * [AWK Quick Reference](https://www.dropbox.com/s/qyyfxm4kibbdx2x/awk%20quick%20reference.pdf?dl=0)
+
+### Q: What is the best way to transfer information between work and home devices?
+
