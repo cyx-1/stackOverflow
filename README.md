@@ -70,5 +70,71 @@ https://github.com/appbaseio/reactivesearch/blob/dev/README.md#4-live-demos
  * [SED Quick Reference](https://www.dropbox.com/s/mj4lswzvib1baxq/sed%20quick%20reference.png?dl=0)
  * [AWK Quick Reference](https://www.dropbox.com/s/qyyfxm4kibbdx2x/awk%20quick%20reference.pdf?dl=0)
 
-### Q: What is the best way to transfer information between work and home devices?
+### Q: What is the best way to transfer information between work and home devices? [productivity]
+ * Inbound Method 1: AirDrop a text file from MBP to IPhone OneDrive, put the file into a company folder (secure, not scanned)
+ * Inbound Method 2: commit into github for reading consumption, clone is allowed, but commit is not, but minor modification can be done via source edit directly on github site (not secure, not scanned)
+ * Inbound / Outbound Method 3: Email (not secure, scanned)
+ * Company information does not leave the company intranet
 
+### Q: What are some techniques to boost performance in Java
+ * Memory mapping/binary file so that objects need not be created on heap
+ * Flyweight pattern so that objects on the heap can be reused
+ * Binary transfer over the network to avoid data structure translation
+ * Fetch size optimization for queries to avoid latency for network roundtrips
+ * Multithreading to utilize more CPU cores (individual core speed is not following Moore's law anymore)
+ * Avoid putting time consuming logic in tight loops
+ * Separate logic between IO-bound computation and CPU-bound computation. For example let one thread consume bytes over the wire as fast as possible, and let another thread create objects based on bytes consumed
+ * String comparison is more expensive than number comparison, so creating lookup table for massive number of comparison can be much better
+ * Zero buffer copy 
+ * Leverage multiple core on CPU and multiple queue on NIC to transfer bytes faster in parallel streams
+ * Pre-compute to get answers ready during UI input 
+ * JIT processing. As soon as one independent chunk is ready for the next step, proceed
+ * Use paging techniques to avoid sending full payload to the presentation layer
+ * Display initial content that can be consumed rather than wait for full completion
+ * Perceived performance: Type-ahead, Progress bar
+
+### Q: What are some techniques to be more memory efficient in Java
+ * use primitives
+ * use certain data structure libraries
+ * pull up variables into classes with fewer instances where possible. For example: something is wrong if class with large instance count contains repeated information
+ * caching strategy: off-heap, MRU
+
+### Q: What is a quick way to run ElasticSearch onto Mac
+Use the unofficial Mac package manager!
+Note: I had to uninstall brew to get brew working again. [HomeBrew](https://brew.sh/)
+See also: https://stackoverflow.com/a/22855889
+```
+brew update
+brew install elasticsearch
+Data:    /usr/local/var/lib/elasticsearch/elasticsearch_yexinchen/
+Logs:    /usr/local/var/log/elasticsearch/elasticsearch_yexinchen.log
+Plugins: /usr/local/var/elasticsearch/plugins/
+Config:  /usr/local/etc/elasticsearch/
+/usr/local/Cellar/elasticsearch/6.2.4: 112 files, 30.8MB, built in 5 seconds
+
+Navigate to http://localhost:9200/ and see the following:
+{
+  "name" : "sti_dJT",
+  "cluster_name" : "elasticsearch_yexinchen",
+  "cluster_uuid" : "8vk-Xh2vTBeMVIDetBjNNA",
+  "version" : {
+    "number" : "6.2.4",
+    "build_hash" : "ccec39f",
+    "build_date" : "2018-04-12T20:37:28.497551Z",
+    "build_snapshot" : false,
+    "lucene_version" : "7.2.1",
+    "minimum_wire_compatibility_version" : "5.6.0",
+    "minimum_index_compatibility_version" : "5.0.0"
+  },
+  "tagline" : "You Know, for Search"
+}
+```
+
+### Q: What is a quick way to ramp up on ElasticSearch
+ * [Elastic Search 101](https://www.dropbox.com/s/4wjyhlagfd720c2/ElasticSearch%20101.pdf?dl=0)
+ * [Elastic Search Cheatsheet](https://www.dropbox.com/s/0dw9q8a67j1c3u9/elasticsearch-cheatsheet.txt?dl=0)
+
+### Q: Download a clean PDF representation of a website
+ * Open up the site in Safari
+ * In the view menu, choose "Show Reader". Shift-CMD-R is the shortcut
+ * Export as PDF from Safari
