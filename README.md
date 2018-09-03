@@ -57,10 +57,7 @@ http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
 cut -d' ' -f1
 ```
 ### Q: What is the best technique to remember things? [memory] [open]
-anki, github stackOverflow, CDN in Dropbox
-
-Make a search site that uses elasticsearch
-https://github.com/appbaseio/reactivesearch/blob/dev/README.md#4-live-demos
+anki, github stackOverflow, CDN in Dropbox, [hello-SearchKit](https://github.com/cyx-1/hello-searchkit-elasticsearch), elasticsearch
 
 ### Q: Where are the cheatsheets for common computing topics [cheatsheet] [vi] [git] [chrome] [awk] [sed]
  * [General Cheatsheets](http://overapi.com/)
@@ -100,7 +97,8 @@ https://github.com/appbaseio/reactivesearch/blob/dev/README.md#4-live-demos
  * caching strategy: off-heap, MRU
 
 ### Q: What is a quick way to run ElasticSearch onto Mac
-Use the unofficial Mac package manager!
+Use HomeBrew for component that runs as software.
+
 Note: I had to uninstall brew to get brew working again. [HomeBrew](https://brew.sh/)
 See also: https://stackoverflow.com/a/22855889
 ```
@@ -134,7 +132,34 @@ Navigate to http://localhost:9200/ and see the following:
  * [Elastic Search 101](https://www.dropbox.com/s/4wjyhlagfd720c2/ElasticSearch%20101.pdf?dl=0)
  * [Elastic Search Cheatsheet](https://www.dropbox.com/s/0dw9q8a67j1c3u9/elasticsearch-cheatsheet.txt?dl=0)
 
-### Q: Download a clean PDF representation of a website
+### Q: How to change ElasticSearch server to avoid CORS issues for development logic on localhost
+Error seen in Chrome console when launching a web application on localhost that connects to elasticsearch runningn locally: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:3000' is therefore not allowed access. Solution is to add the following into elasticsearch.yml configuration and then restart elasticsearch
+```
+http.cors:
+   enabled: true
+   allow-origin: /https?:\/\/localhost(:[0-9]+)?/
+```
+
+### Q: How to download a clean PDF representation of a website
  * Open up the site in Safari
  * In the view menu, choose "Show Reader". Shift-CMD-R is the shortcut
  * Export as PDF from Safari
+
+### Q: What are key milestones in the software engineering industry
+ * Sep 2016 Facebook introduces YARN to improve on NPM: ~5x speed over NPM v4 and package determinism
+ * May 2017 NPM v5 released to narrow the gap with YARN 
+
+### Q: How do you use various software package managers? (npm, yarn, homebrew)
+ * Use homebrew for software you install and run: elasticsearch, yarn
+ * Use npm for javascript packages that is used in the code 
+ * Don't use YARN because it splits community and NPM v5 has mostly [caught up](https://iamturns.com/yarn-vs-npm-2018/)
+
+### Q: Is there a way to swap between different versions of node and npm? 
+ * Yes, use nvm
+```
+nvm alias default v8.4.0
+nvm use v8.4.0
+nvm ls
+# display all nvm commands
+nvm 
+```
