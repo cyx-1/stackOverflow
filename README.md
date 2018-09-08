@@ -163,3 +163,44 @@ nvm ls
 # display all nvm commands
 nvm 
 ```
+
+### Q: What are questions to develop a growth mindset in children
+1. What did you do today that made you think hard?
+2. What happened today that made you keep on going?
+3. What can you learn from this?
+4. What mistake did you make that taught you something?
+5. What did you try hard at today?
+6. What strategy are you going to try now?
+7. What will you do to chalenge yourself today?
+8. What will you do to improve your work?
+9. What wil you do to improve your talent?
+10. What will you do to solve this problem?
+
+### Q: What are some good reading comprehension questions
+1. Inferring - to arrive at a decision or opinion using your own knowledge and clues from text
+   1. Can you predict what is going to happen next
+   2. Why did the character do that?
+   3. What did the author mean by ___?
+   4. What's going to happen next?
+   5. (Character) must be feeling ___. Are there any clues that help us know that?
+2. Summarizing - to put into your own words, a shortened version of the spoken or written material
+   1. In general, what is the story about?
+   2. What is the problem to be solved in this story? Is there a solution?
+   3. What has happened so far?
+3. Synthesizing - A process where students merge new information with prior knowledge to form a new idea, perspective, or opinion
+   1. Is there anything that you understand in a new way from reading this story?
+   2. What idea's are most interesting to you? why?
+   3. Does a historical event or personal experience make more sense after reading this?
+4. Analyzing
+   1. What things would make everyone like this book?
+   2. In what ways does teh autoor make you feel as if you were there?
+   3. What are some examples of rich, colorful or great language that makes this a good passage to read?
+5. Critiquing
+   1. Would people in your life act this way?
+   2. What is unbelievable about this text?
+   3. Should other kids read this? Why or why not?
+   4. What would have made this story more interesting to read?
+6. Basic recall explicit questioning
+   1. Who is the main character in the story? 
+   2. Who are the other characters in the story?
+   3. What is your favorite part of the chapter or book?
