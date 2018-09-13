@@ -212,3 +212,19 @@ www.bestpickreports.com
 Dell machine ~2010: Intel Core2 Duo E6400 2.13 GHz with the benchmark rating of 803:1289, 65nm, 2 cores, 2MB L2 Cache, 1066 MHz bus speed
 Mac Mini (Late 2012) Intel Core i7-3615QM 2.3 GHz with benchmark rating of 1644:7371, 22nm, 4 cores, 8 threads, 6MB L2 Cache, Hyper Threading
 Mac Book Pro (Late 2012) Intel Core i5-3210M 2.5 GHz with benchmark rating of 1521:3821, 32nm, 4 cores, 4 threads, 6MB L2 Cache, no Hyper Threading
+
+### Q: What is the difference between old and new cutting board
+ * New chopping board is for working with food that goes into mouth: cooked food, fruits
+ * Old chopping board is for working with food that is raw meat, onion or food that requires cooking
+
+### Q: What is the difference between old and new sponge
+  * Clean sponge is for dish washing, old sponge is for sink washing
+
+### Q: What are good habits to follow after returning home from work?
+  * put bag where it belongs: corner next to TV or put underneath the console table 
+  * put air purifier into sneaker 
+  * hang up dress shirts / pants into closet
+
+### Q: What is the difference between big and small butcher knife
+  * big butcher knife is for raw stuff, and if clean, water melon or cooked chicken as well. 
+  * Smaller black knife is for cutting cookied meat
