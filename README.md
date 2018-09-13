@@ -212,6 +212,8 @@ www.bestpickreports.com
 Dell machine ~2010: Intel Core2 Duo E6400 2.13 GHz with the benchmark rating of 803:1289, 65nm, 2 cores, 2MB L2 Cache, 1066 MHz bus speed
 Mac Mini (Late 2012) Intel Core i7-3615QM 2.3 GHz with benchmark rating of 1644:7371, 22nm, 4 cores, 8 threads, 6MB L2 Cache, Hyper Threading
 Mac Book Pro (Late 2012) Intel Core i5-3210M 2.5 GHz with benchmark rating of 1521:3821, 32nm, 4 cores, 4 threads, 6MB L2 Cache, no Hyper Threading
+IPhone 6 A1549 (Sep 2014 model) CPU A8, Mobile passmark rating of 5174
+IPhone 7 A1661 (Sep 2016 model) CPU A10 Mobile passmark rating of 8748
 
 ### Q: What is the difference between old and new cutting board
  * New chopping board is for working with food that goes into mouth: cooked food, fruits
