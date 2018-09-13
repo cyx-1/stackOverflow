@@ -204,3 +204,11 @@ nvm
    1. Who is the main character in the story? 
    2. Who are the other characters in the story?
    3. What is your favorite part of the chapter or book?
+
+### Q: What is a good resource to find home improvement contractors?
+www.bestpickreports.com
+
+### Q: What are the CPU specs for different computing devices used in the past within the family?
+Dell machine ~2010: Intel Core2 Duo E6400 2.13 GHz with the benchmark rating of 803:1289, 65nm, 2 cores, 2MB L2 Cache, 1066 MHz bus speed
+Mac Mini (Late 2012) Intel Core i7-3615QM 2.3 GHz with benchmark rating of 1644:7371, 22nm, 4 cores, 8 threads, 6MB L2 Cache, Hyper Threading
+Mac Book Pro (Late 2012) Intel Core i5-3210M 2.5 GHz with benchmark rating of 1521:3821, 32nm, 4 cores, 4 threads, 6MB L2 Cache, no Hyper Threading
