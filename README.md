@@ -51,7 +51,11 @@ git cmp "msg" # add, commit and push, all in one! git config --global alias.cmp 
 ```
 http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
 
-### Q: What is a good example of cut command? {Unix}
+### Q: What is needed to be productive when using git in sublime? {git} {sublime}
+ * Install git and gitgutter via Cmd-Shift-P - Package Control: Install Package 
+ * Cmd-Shift-P, quick commit; Cmd-Shift-P push    # push a modified file into remote
+
+### Q: What is a good example of cut command? {unix}
 ```
 # use space as delimiter and extract first field
 cut -d' ' -f1
