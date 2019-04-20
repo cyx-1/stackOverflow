@@ -215,18 +215,18 @@ www.bestpickreports.com
 4. IPhone 6 A1549 (Sep 2014 model) CPU A8, Mobile passmark rating of 5174
 5. IPhone 7 A1661 (Sep 2016 model) CPU A10 Mobile passmark rating of 8748
 
-### Q: What is the difference between old and new cutting board
+### Q: What is the difference between old and new cutting board [houseRules]
  * New chopping board is for working with food that goes into mouth: cooked food, fruits
  * Old chopping board is for working with food that is raw meat, onion or food that requires cooking
 
-### Q: What is the difference between old and new sponge
+### Q: What is the difference between old and new sponge [houseRules]
   * Clean sponge is for dish washing, old sponge is for sink washing
 
-### Q: What are good habits to follow after returning home from work?
+### Q: What are good habits to follow after returning home from work? [houseRules]
   * put bag where it belongs: corner next to TV or put underneath the console table 
   * put air purifier into sneaker 
   * hang up dress shirts / pants into closet
 
-### Q: What is the difference between big and small butcher knife
+### Q: What is the difference between big and small butcher knife [houseRules]
   * big butcher knife is for raw stuff, and if clean, water melon or cooked chicken as well. 
   * Smaller black knife is for cutting cookied meat
