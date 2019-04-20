@@ -235,3 +235,15 @@ www.bestpickreports.com
 ### Q: What is the difference between big and small butcher knife {houseRules}
   * big butcher knife is for raw stuff, and if clean, water melon or cooked chicken as well. 
   * Smaller black knife is for cutting cookied meat
+
+### Q: What happened with Boeing 737 Max? {engineeringFailure}
+  * Bigger engine leads to more efficiency (less fuel per power produced)
+  * When competing against new Airbus, larger engine was added to older aircraft like 737
+  * Larger engine needs to be placed in a position closer to front of airplane, in order to have enough clearance between the bottom of engine and the ground
+  * The new engine position creates propensity for airplane to pitch up when applying thrust
+  * Too much pitch up leads to aerodynamic stall
+  * Angle of attack sensor could prevent stall when working with Boeing's software system called MCAS (Maneuvering Characteristics Augmentation System), which automatically tells the airplane to point nose down if angle of attack is too close to aerodynamic stall conditions
+  * MCAS works independently on both side of plane's computer and sensors. The pilot and co-pilot are supposed to be tie breakers when computer is in disagreemnt
+  * MCAS doesn't allow pilot to override, and this is catastropic when the sensor is mal-functioning
+  * Airbus airplane, in comparison, has 3 different sensors, which is more reliable by reaching quorum based decision making
+  * Goal of MCAS to keep 737 pilots have an easier time to become familia with all 737 planes
