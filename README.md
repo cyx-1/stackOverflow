@@ -246,4 +246,4 @@ www.bestpickreports.com
   * MCAS works independently on both side of plane's computer and sensors. The pilot and co-pilot are supposed to be tie breakers when computer is in disagreemnt
   * MCAS doesn't allow pilot to override, and this is catastropic when the sensor is mal-functioning
   * Airbus airplane, in comparison, has 3 different sensors, which is more reliable by reaching quorum based decision making
-  * Goal of MCAS to keep 737 pilots have an easier time to become familia with all 737 planes
+  * Goal of MCAS to keep 737 pilots familiar with existing 737 procedures, and thus reduce cost
