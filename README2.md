@@ -1,30 +1,30 @@
-### Q: How to get Sublime 3 enabled with vim mode? {sublime} {vi}
-In user setting, change "ignored_packages": ["Vintage"] to ignored_packages": []
+### Q: How to get Sublime 3 enabled with vim mode? [sublime} [vi] 
+In user setting, change "ignored_packages": ["Vintage"} to ignored_packages": []
 https://www.sublimetext.com/docs/2/vintage.html
 
-### Q: Sublime on Mac is not allowing keys to be repeated. How to resolve this? {sublime} 
+### Q: Sublime on Mac is not allowing keys to be repeated. How to resolve this? [sublime} 
 You can disable this feature for just Sublime Text by issuing the following command in your terminal (*not* the Sublime Text console), restart required:
 defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
 https://gist.github.com/kconragan/2510186
 
-### Q: What is the package that needs to be installed in Sublime to get markdown support? {sublime} {markdown}
+### Q: What is the package that needs to be installed in Sublime to get markdown support? [sublime} [markdown]
  * Download MarkDownPreview: Cmd-Shift-P - Package Control: Install Package
  * Use: Cmd-Shift-P - Markdown Preview: preview in browser
 
-### Q: What are some basic concepts for bash shell? {bash}
+### Q: What are some basic concepts for bash shell? [bash}
 command line editing (set -o vi), command history (!), shell and subshell, double quote vs single quote, startup scripts, program argument ($1, $#, $@), continuing line (\\), variable (setting a variable must not have space before and after =: test='hello')
 
-### Q: What is the difference between double quote vs single quote in bash? {bash}
+### Q: What is the difference between double quote vs single quote in bash? [bash}
 Single quotes won't interpolate anything, but double quotes will.
 https://stackoverflow.com/a/6697781
 
-### Q: What is the importance of shell vs subshell {bash}
+### Q: What is the importance of shell vs subshell [bash}
 subshell inherits environment variable (export) from parent shell, but does not inherit the shell variables defined in the parent shell
 
-### Q: What are some key startup scripts for bash {bash}
+### Q: What are some key startup scripts for bash [bash}
 .bash_profile gets executed when shell gets initialized (login shell), .bashrc gets executed when entering subshell, it may be a good practice to call .bashrc from .bash_profile. .bash_logout gets executed when exiting login shell.
 
-### Q: How to have bash script read from file or from standard in {bash}
+### Q: How to have bash script read from file or from standard in [bash}
 ```
 while read line
 do
@@ -33,10 +33,10 @@ done < "${1:-/dev/stdin}"
 ```
 https://stackoverflow.com/a/7045517
 
-### Q: How to render markdown files in chrome? {chrome} {markdown}
+### Q: How to render markdown files in chrome? [chrome} [markdown]
 Download this Chrome extension: Markdown Preview Plus
 
-### Q: What are some basic command line to be productive in GIT {git}
+### Q: What are some basic command line to be productive in GIT [git} [open]
 ```
 git clone <url>
 git commit -a -m 'A simple msg' # stage and commit with a msg
@@ -45,30 +45,29 @@ git push # push commits to current remote
 git push origin # push commits to remote
 git fetch # get the latest info from remote
 git pull # update local branch with the latest from remote
-git ls # if the alias is setup, git ls shows commit history: git config --global alias.ls 'log --pretty=format:"%C(yellow)%h %cd%Cblue {%cn} %Cred%d - %Creset%s" --decorate --date=format:"%Y-%m-%d %H:%M:%S"' --replace-all
+git ls # if the alias is setup, git ls shows commit history: git config --global alias.ls 'log --pretty=format:"%C(yellow)%h %cd%Cblue [%cn} %Cred%d - %Creset%s" --decorate --date=format:"%Y-%m-%d %H:%M:%S"' --replace-all
 git ls origin/master # shows commit history for a remote branch
 git cmp "msg" # add, commit and push, all in one! git config --global alias.cmp '!f() { git add -A && git commit -m "$@" && git push; }; f'
 ```
 http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
 
-### Q: What is a good example of cut command? {Unix}
+### Q: What is a good example of cut command? [Unix}
 ```
 # use space as delimiter and extract first field
 cut -d' ' -f1
 ```
-### Q: What is the best technique to remember things? {memory}
-anki, github stackOverflow, CDN in Dropbox, {hello-SearchKit}(https://github.com/cyx-1/hello-searchkit-elasticsearch), elasticsearch
+### Q: What is the best technique to remember things? [memory} [open]
+anki, github stackOverflow, CDN in Dropbox, [hello-SearchKit}(https://github.com/cyx-1/hello-searchkit-elasticsearch), elasticsearch
 
-### Q: Where are the cheatsheets for common computing topics {cheatsheet} {vi} {git} {chrome} {awk} {sed}
- * [General Cheatsheets](http://overapi.com/)
- * [Git Quick Reference](https://www.dropbox.com/s/i3hzp531puvfsnc/git%20quick%20reference.pdf?dl=0)
- * [Git Quick Reference 2](https://www.dropbox.com/s/59qpq9juxmcamou/git%20quick%20reference%202.pdf?dl=0)
- * [Vim Quick Reference](https://www.dropbox.com/s/sfdiwdhsr4whthe/vim%20quick%20reference.png?dl=0)
- * [Chrome Quick Reference](https://www.dropbox.com/s/ll1cai8kpa68gm1/chrome%20quick%20reference%20mac.pdf?dl=0)
- * [SED Quick Reference](https://www.dropbox.com/s/mj4lswzvib1baxq/sed%20quick%20reference.png?dl=0)
- * [AWK Quick Reference](https://www.dropbox.com/s/qyyfxm4kibbdx2x/awk%20quick%20reference.pdf?dl=0)
+### Q: Where are the cheatsheets for common computing topics [cheatsheet} [vi] [git] [chrome] [awk] [sed]
+ * [General Cheatsheets}(http://overapi.com/)
+ * [Git Quick Reference}(https://www.dropbox.com/s/i3hzp531puvfsnc/git%20quick%20reference.pdf?dl=0), [Git Quick Reference 2](https://www.dropbox.com/s/59qpq9juxmcamou/git%20quick%20reference%202.pdf?dl=0)
+ * [Vim Quick Reference}(https://www.dropbox.com/s/sfdiwdhsr4whthe/vim%20quick%20reference.png?dl=0)
+ * [Chrome Quick Reference}(https://www.dropbox.com/s/ll1cai8kpa68gm1/chrome%20quick%20reference%20mac.pdf?dl=0)
+ * [SED Quick Reference}(https://www.dropbox.com/s/mj4lswzvib1baxq/sed%20quick%20reference.png?dl=0)
+ * [AWK Quick Reference}(https://www.dropbox.com/s/qyyfxm4kibbdx2x/awk%20quick%20reference.pdf?dl=0)
 
-### Q: What is the best way to transfer information between work and home devices? {productivity}
+### Q: What is the best way to transfer information between work and home devices? [productivity}
  * Inbound Method 1: AirDrop a text file from MBP to IPhone OneDrive, put the file into a company folder (secure, not scanned)
  * Inbound Method 2: commit into github for reading consumption, clone is allowed, but commit is not, but minor modification can be done via source edit directly on github site (not secure, not scanned)
  * Inbound / Outbound Method 3: Email (not secure, scanned)
@@ -100,7 +99,7 @@ anki, github stackOverflow, CDN in Dropbox, {hello-SearchKit}(https://github.com
 ### Q: What is a quick way to run ElasticSearch onto Mac
 Use HomeBrew for component that runs as software.
 
-Note: I had to uninstall brew to get brew working again. [HomeBrew](https://brew.sh/)
+Note: I had to uninstall brew to get brew working again. [HomeBrew}(https://brew.sh/)
 See also: https://stackoverflow.com/a/22855889
 ```
 brew update
@@ -130,15 +129,15 @@ Navigate to http://localhost:9200/ and see the following:
 ```
 
 ### Q: What is a quick way to ramp up on ElasticSearch
- * [Elastic Search 101](https://www.dropbox.com/s/4wjyhlagfd720c2/ElasticSearch%20101.pdf?dl=0)
- * [Elastic Search Cheatsheet](https://www.dropbox.com/s/0dw9q8a67j1c3u9/elasticsearch-cheatsheet.txt?dl=0)
+ * [Elastic Search 101}(https://www.dropbox.com/s/4wjyhlagfd720c2/ElasticSearch%20101.pdf?dl=0)
+ * [Elastic Search Cheatsheet}(https://www.dropbox.com/s/0dw9q8a67j1c3u9/elasticsearch-cheatsheet.txt?dl=0)
 
 ### Q: How to change ElasticSearch server to avoid CORS issues for development logic on localhost
 Error seen in Chrome console when launching a web application on localhost that connects to elasticsearch runningn locally: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:3000' is therefore not allowed access. Solution is to add the following into elasticsearch.yml configuration and then restart elasticsearch
 ```
 http.cors:
    enabled: true
-   allow-origin: /https?:\/\/localhost(:{0-9}+)?/
+   allow-origin: /https?:\/\/localhost(:[0-9}+)?/
 ```
 
 ### Q: How to download a clean PDF representation of a website
@@ -153,7 +152,7 @@ http.cors:
 ### Q: How do you use various software package managers? (npm, yarn, homebrew)
  * Use homebrew for software you install and run: elasticsearch, yarn
  * Use npm for javascript packages that is used in the code 
- * Don't use YARN because it splits community and NPM v5 has mostly [caught up](https://iamturns.com/yarn-vs-npm-2018/)
+ * Don't use YARN because it splits community and NPM v5 has mostly [caught up}(https://iamturns.com/yarn-vs-npm-2018/)
 
 ### Q: Is there a way to swap between different versions of node and npm? 
  * Yes, use nvm
@@ -216,18 +215,18 @@ www.bestpickreports.com
 4. IPhone 6 A1549 (Sep 2014 model) CPU A8, Mobile passmark rating of 5174
 5. IPhone 7 A1661 (Sep 2016 model) CPU A10 Mobile passmark rating of 8748
 
-### Q: What is the difference between old and new cutting board {houseRules}
+### Q: What is the difference between old and new cutting board [houseRules}
  * New chopping board is for working with food that goes into mouth: cooked food, fruits
  * Old chopping board is for working with food that is raw meat, onion or food that requires cooking
 
-### Q: What is the difference between old and new sponge {houseRules}
+### Q: What is the difference between old and new sponge [houseRules}
   * Clean sponge is for dish washing, old sponge is for sink washing
 
-### Q: What are good habits to follow after returning home from work? {houseRules}
+### Q: What are good habits to follow after returning home from work? [houseRules}
   * put bag where it belongs: corner next to TV or put underneath the console table 
   * put air purifier into sneaker 
   * hang up dress shirts / pants into closet
 
-### Q: What is the difference between big and small butcher knife {houseRules}
+### Q: What is the difference between big and small butcher knife [houseRules}
   * big butcher knife is for raw stuff, and if clean, water melon or cooked chicken as well. 
   * Smaller black knife is for cutting cookied meat
