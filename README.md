@@ -61,7 +61,7 @@ http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
 cut -d' ' -f1
 ```
 ### Q: What is the best technique to remember things? {memory}
-anki, github stackOverflow, CDN in Dropbox, {hello-SearchKit}(https://github.com/cyx-1/hello-searchkit-elasticsearch), elasticsearch
+anki, github stackOverflow, CDN in Dropbox, [hello-SearchKit](https://github.com/cyx-1/hello-searchkit-elasticsearch), elasticsearch
 
 ### Q: Where are the cheatsheets for common computing topics {cheatsheet} {vi} {git} {chrome} {awk} {sed}
  * [General Cheatsheets](http://overapi.com/)
