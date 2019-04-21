@@ -243,7 +243,7 @@ www.bestpickreports.com
   * The new engine position creates propensity for airplane to pitch up when applying thrust
   * Too much pitch up leads to aerodynamic stall
   * Angle of attack sensor could prevent stall when working with Boeing's software system called MCAS (Maneuvering Characteristics Augmentation System), which automatically tells the airplane to point nose down if angle of attack is too close to aerodynamic stall conditions
-  * MCAS works independently on both side of plane's computer and sensors. The pilot and co-pilot are supposed to be tie breakers when computer is in disagreemnt
+  * MCAS works independently on both side of plane's computer and sensors. The pilot and co-pilot are supposed to be tie breakers when computer is in disagreement
   * MCAS doesn't allow pilot to override, and this is catastropic when the sensor is mal-functioning
   * Airbus airplane, in comparison, has 3 different sensors, which is more reliable by reaching quorum based decision making
   * Goal of MCAS to keep 737 pilots familiar with existing 737 procedures, and thus reduce cost
