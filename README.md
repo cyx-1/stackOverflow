@@ -247,3 +247,6 @@ www.bestpickreports.com
   * MCAS doesn't allow pilot to override, and this is catastropic when the sensor is mal-functioning
   * Airbus airplane, in comparison, has 3 different sensors, which is more reliable by reaching quorum based decision making
   * Goal of MCAS to keep 737 pilots familiar with existing 737 procedures, and thus reduce cost
+
+### Q: What is a good temperature for baking chicken drumstick {recipe}
+  * 400 degree, 40-45 minutes
