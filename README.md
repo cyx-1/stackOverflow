@@ -264,3 +264,8 @@ www.bestpickreports.com
 ### Q: Where can I see the content of this file on github? {memory}
   * https://raw.githubusercontent.com/cyx-1/stackOverflow/master/README.md
   * https://github.com/cyx-1/stackOverflow
+
+### Q: What is the inventory of electronics {tinkering}
+  * Digital Multimeter: https://www.amazon.com/gp/product/B07FDZHRB8
+  * Soldering iron kit: https://www.amazon.com/gp/product/B06XZ31W3M
+  * Arduino starter kit: https://www.amazon.com/Arduino-Starter-Kit-English-Official/dp/B009UKZV0A
