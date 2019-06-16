@@ -259,3 +259,8 @@ www.bestpickreports.com
 
 ### Q: What needs to be done to change minecraft player name? {minecraft}
   * Modify ~/Library/Application Support/minecraft/launcher_profiles.json
+  * Change the username in the file
+
+### Q: Where can I see the content of this file on github? {memory}
+  * https://raw.githubusercontent.com/cyx-1/stackOverflow/master/README.md
+  * https://github.com/cyx-1/stackOverflow
