@@ -239,7 +239,7 @@ www.bestpickreports.com
 ### Q: What happened with Boeing 737 Max? {engineeringFailure}
   * Bigger engine leads to more efficiency (less fuel per power produced)
   * When competing against new Airbus, larger engine was added to older aircraft like 737
-  * Larger engine needs to be placed in a position closer to front of airplane, in order to have enough clearance between the bottom of engine and the ground
+  * Larger engine needs to be placed in a position closer to front of airplane, in order to have enough clearance between the bottom of engine and tWhe ground
   * The new engine position creates propensity for airplane to pitch up when applying thrust
   * Too much pitch up leads to aerodynamic stall
   * Angle of attack sensor could prevent stall when working with Boeing's software system called MCAS (Maneuvering Characteristics Augmentation System), which automatically tells the airplane to point nose down if angle of attack is too close to aerodynamic stall conditions
@@ -250,3 +250,12 @@ www.bestpickreports.com
 
 ### Q: What is a good temperature for baking chicken drumstick {recipe}
   * 400 degree, 40-45 minutes
+
+### Q: How did global finals go for DI 2019
+  * 15+ countries
+  * 8000 students
+  * 17000 attendees
+  * 350K square feet of props showcase
+
+### Q: What needs to be done to change minecraft player name? {minecraft}
+  * Modify ~/Library/Application Support/minecraft/launcher_profiles.json
