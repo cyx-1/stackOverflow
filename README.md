@@ -265,7 +265,10 @@ www.bestpickreports.com
   * https://raw.githubusercontent.com/cyx-1/stackOverflow/master/README.md
   * https://github.com/cyx-1/stackOverflow
 
-### Q: What is the inventory of electronics {tinkering}
+### Q: What is my inventory of electronics {electronics}
   * Digital Multimeter: https://www.amazon.com/gp/product/B07FDZHRB8
   * Soldering iron kit: https://www.amazon.com/gp/product/B06XZ31W3M
   * Arduino starter kit: https://www.amazon.com/Arduino-Starter-Kit-English-Official/dp/B009UKZV0A
+
+### Q: What are examples of electronics parts that are useful for tinkering? {electronics}
+  * 
