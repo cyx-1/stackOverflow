@@ -71,6 +71,7 @@ anki, github stackOverflow, CDN in Dropbox, [hello-SearchKit](https://github.com
  * [Chrome Quick Reference](https://www.dropbox.com/s/ll1cai8kpa68gm1/chrome%20quick%20reference%20mac.pdf?dl=0)
  * [SED Quick Reference](https://www.dropbox.com/s/mj4lswzvib1baxq/sed%20quick%20reference.png?dl=0)
  * [AWK Quick Reference](https://www.dropbox.com/s/qyyfxm4kibbdx2x/awk%20quick%20reference.pdf?dl=0)
+ * [Sublime3 OSX Reference](https://www.dropbox.com/s/hledclezbpp5trf/sublime3-osx.pdf?dl=0)
 
 ### Q: What is the best way to transfer information between work and home devices? {productivity}
  * Inbound Method 1: AirDrop a text file from MBP to IPhone OneDrive, put the file into a company folder (secure, not scanned)
@@ -271,4 +272,4 @@ www.bestpickreports.com
   * Arduino starter kit: https://www.amazon.com/Arduino-Starter-Kit-English-Official/dp/B009UKZV0A
 
 ### Q: What are examples of electronics parts that are useful for tinkering? {electronics}
-  * 
+  * 90-b v what the flip
