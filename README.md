@@ -273,4 +273,6 @@ www.bestpickreports.com
   * Arduino starter kit: https://www.amazon.com/Arduino-Starter-Kit-English-Official/dp/B009UKZV0A
 
 ### Q: What are examples of electronics parts that are useful for tinkering? {electronics}
-  * 90-b v what the flip
+
+### Q: What are some important shortcuts that should be remembered {shortcuts}
+  * Enter / Exit full screen on Mac: Ctrl-Cmd-F
