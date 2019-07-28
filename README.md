@@ -276,3 +276,4 @@ www.bestpickreports.com
 
 ### Q: What are some important shortcuts that should be remembered {shortcuts}
   * Enter / Exit full screen on Mac: Ctrl-Cmd-F
+  * Launch application via keyboard on Mac: Ctrl-Space (Spotlight)
