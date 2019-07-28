@@ -169,6 +169,12 @@ nvm use v8.4.0
 nvm ls
 # display all nvm commands
 nvm 
+
+# check what are all the node versions available
+nvm ls-remote
+
+# install a version (typically the latest LTS, long term support, version)
+nvm install 10.16.0
 ```
 
 ### Q: What are questions to develop a growth mindset in children
@@ -277,3 +283,13 @@ www.bestpickreports.com
 ### Q: What are some important shortcuts that should be remembered {shortcuts}
   * Enter / Exit full screen on Mac: Ctrl-Cmd-F
   * Launch application via keyboard on Mac: Ctrl-Space (Spotlight)
+  * Edit the address bar in chrome window: Cmd-L
+  * Switch between different programs in Mac: Ctrl-Left/Right arrow
+
+### Q: What has been done to learn Typescript
+  * Install Typescript via this command: npm install -g typescript
+  * Check the Typescript version: tsc --version
+  * If VS Code npm version doesn't match with the npm/node installed in shell, use this command: nvm alias default <version> See: https://stackoverflow.com/a/44707192
+
+### Q: Check what version of package has been installed globally via npm
+  * npm list -g | grep <something>
