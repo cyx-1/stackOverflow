@@ -286,10 +286,47 @@ www.bestpickreports.com
   * Edit the address bar in chrome window: Cmd-L
   * Switch between different programs in Mac: Ctrl-Left/Right arrow
 
-### Q: What has been done to learn Typescript
-  * Install Typescript via this command: npm install -g typescript
-  * Check the Typescript version: tsc --version
-  * If VS Code npm version doesn't match with the npm/node installed in shell, use this command: nvm alias default <version> See: https://stackoverflow.com/a/44707192
+### Q: What has been done to learn programming
+  * August: 
+    * Install Typescript via this command: npm install -g typescript
+    * Check the Typescript version: tsc --version
+    * If VS Code npm version doesn't match with the npm/node installed in shell, use this command: nvm alias default <version> See: https://stackoverflow.com/a/44707192
+    * Nice quick start: https://code.visualstudio.com/docs/typescript/typescript-tutorial
+    * Nice playground: https://www.typescriptlang.org/play/index.html
+    * ESLint rules: https://eslint.org/docs/rules/ 
+    * VS Code plugin: ESLint, Vim
+    * Stopped using VS Code plugin: prettier
+    * Prefer ESLint over TSLint because that's MSFT's direction: https://github.com/Microsoft/TypeScript/issues/29288
+    * Don't bother with naming files with es6 extension, since ECMAScript standard changes quickly
+    * Started to use SSH key on MBP to avoid annoying popups
+
+
+### Q: What is the history of JavaScript, ECMAScript and TypeScript
+  * Source PDF for archived standard: https://www.ecma-international.org/publications/standards/Ecma-262-arch.htm
+  * 1995 Javascript invented by Brendan Eich in 1995 in Netscape. Original name was Mocha, then LiveScript, named to JavaScript in 1995 after license purchase from Sun Microsystems. Other vendors had similar implementations: ActionScript (Macromedia), JScript (Microsoft). EcmaScript is to unite vendors implementations into a single standard
+  * 1997 ES1/ES1997: first edition of ECMS-262 standard
+  * 1998 ES2/ES1998: minimal change
+  * 1999 ES3/ES1999: Supported by all browsers. introduced triple equal operator, try-catch, regular expression
+  * ES4: abandonded, due to disagreement on scope of change
+  * 2005 AJAX Asynchronous Javascript And XML https://en.wikipedia.org/wiki/Ajax_(programming), leading to Gmail, Google Map
+  * 2009 ES5/ES2009: Supported by all modern browers. introduced strict mode, more Arrays function, JSON parse and stringify, property getter/setter, and Object methods such as to list properties
+  * 2014 TypeScript 1.0 Super set of ES6. See History: https://en.wikipedia.org/wiki/Microsoft_TypeScript
+  * 2015 ES6/ES2015:
+  * 2016 ES7/ES2016:
+  * 2017 ES8/ES2017:
+  * 2018 ES9/ES2018:
+  * 2018 TypeScript 3.0
+  * 2019 ES10/ES2019:
+  * Reference: browser support for different standards: https://www.w3schools.com/js/js_versions.asp
+
+### Q: What does Typescript have that Javascript does not? 
+  * any, void, never, enum, interface (with inheritance), optional, readonly, type alias
+  * Ability to detect type-related issues, ie assigning value of wrong type into a typed variable
+
+### Q: What are some similaries between TypeScript and Java?
+  * Use of static keyword
+  * Access modifier such as private, public and protected
+  * Extends one class, Implements multiple interfaces
 
 ### Q: Check what version of package has been installed globally via npm
   * npm list -g | grep <something>
