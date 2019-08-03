@@ -298,7 +298,9 @@ www.bestpickreports.com
     * Stopped using VS Code plugin: prettier
     * Prefer ESLint over TSLint because that's MSFT's direction: https://github.com/Microsoft/TypeScript/issues/29288
     * Don't bother with naming files with es6 extension, since ECMAScript standard changes quickly
-    * Started to use SSH key on MBP to avoid annoying popups
+    * Started to use SSH key on MBP to avoid annoying popups https://help.github.com/en/articles/connecting-to-github-with-ssh
+    * Ran into an issue with ESLint when trying to also lint Typescript: looks like ESLint v6 broke something. Holding off on this for now
+    * Started to think about the merit of using nodejs express Lambda for server-side logic, S3 for reactjs client side logic, interface to testing logic outside of the serverless environment. The flashcard could be a great proving ground for this idea
 
 
 ### Q: What is the history of JavaScript, ECMAScript and TypeScript
