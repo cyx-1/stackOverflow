@@ -317,6 +317,11 @@ Use this instead, since React is exported as CommonJS module which does not use 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 ```
+  * 08-04-2019 Deployed a reactjs application to s3. Reference: https://medium.com/serverlessguru/deploy-reactjs-app-with-s3-static-hosting-f640cb49d7e6
+    * create a s3 bucket with public access
+    * upload build content from a react project
+    * create an IAM user with permissions
+    * incorporate deploy to S3 and open browser to package.json
   * Cool things to check out next
     * Nice tutorial site: https://alligator.io/
     * Tell express to configure a fav icon
