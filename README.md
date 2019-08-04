@@ -310,6 +310,13 @@ www.bestpickreports.com
     * Install NVM via homebrew on Desktop, ran into an error "missing xcrun". Fixed via https://apple.stackexchange.com/questions/254380/why-am-i-getting-an-invalid-active-developer-path-when-attempting-to-use-git-a
     * Created a home repo to store common config files
     * On desktop: Installed NVM 0.34.0, and then installed node 10.16.0 and along with it npm 6.9.0
+    * On desktop: Started to look into react again, using create react app using typescript
+```
+Cannot use import React from 'react';
+Use this instead, since React is exported as CommonJS module which does not use a default export 
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+```
   * Cool things to check out next
     * Nice tutorial site: https://alligator.io/
     * Tell express to configure a fav icon
@@ -357,3 +364,7 @@ www.bestpickreports.com
   * Preheat oven to 500, cook for 20 minutes
   * Reduce heat to 300, and roast for additional 45 minutes per pound. 
   * https://www.ibreatheimhungry.com/easy-roasted-pork-shoulder-3/
+
+### Q: What has been your workout activities
+  * 08-03-2019 25 pound barbell plate exercise + Flat dumbbell bench press + Resistance band till muscle exhaustion
+  * 08-04-2019 Ran 2.4 miles to and back from Stop & Shop
