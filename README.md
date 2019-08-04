@@ -301,7 +301,22 @@ www.bestpickreports.com
     * Started to use SSH key on MBP to avoid annoying popups https://help.github.com/en/articles/connecting-to-github-with-ssh
     * Ran into an issue with ESLint when trying to also lint Typescript: looks like ESLint v6 broke something. Holding off on this for now
     * Started to think about the merit of using nodejs express Lambda for server-side logic, S3 for reactjs client side logic, interface to testing logic outside of the serverless environment. The flashcard could be a great proving ground for this idea
-
+    * ClaudiaJS and AWS Lambda works really well!
+    * When it comes to testing software bound for serverless production environment, it is important to be able test locally, allowing the component to have options to simulate or control dependencies. Leverage the control over local dynamodb for unit tests prior to deployment, leverage the control over aws dynamodb for service tests prior to reaching the end of determinism, leverage contract testing to check that all components are communicating without stubs, prior to reaching end of automation, leverage adhoc manual testing to spot check automation prior to unlocking real value of software. 
+    * Looked into service virtualization software such as Mountebank, but found it to be not so attractive, since service test would require a separate mock server. Why create a separate server, if each component can build a debug mode? Every microservice should offer an API to enable debug mode, where the responses can be carefully orchestrated for deterministic testing. Once in the debug mode, stored in dynamoDB, the behavior would be driven by a series of orchestrated simulations, not using real data or the real dependencies.
+    * If an application has a S3 dependency, let's say to work with video or image, then the application should have ability to have debug mode switch to file system that serves up a much smaller media file. Or the application should have ability to use S3 in a testing partition but with a smaller data set that is handcrafted. Here, I would choose to use file system because it would be the same as local testing, since there is no local S3 yet
+    * It might make sense to create separate Lambda to control the data that goes into the debug partition of dynamoDB, since multiple microservice may need dynamoDB orchestration.
+    * Working with nodemon now to auto-restart express server when there is a change detected, beautiful. https://alligator.io/workflow/nodemon/
+  * Cool things to check out next
+    * Nice tutorial site: https://alligator.io/
+    * Tell express to configure a fav icon
+    * Design ideas
+      * Some examples of debug situations
+        * Return a test file: http://localhost:3000/api/getFlashcards?debug=true&debugContentFrom=file&debugContent=test.json
+        * Return response with a delay (30s): http://localhost:3000/api/getFlashcards?debug=true&debugResponseTime=30&debugContentFrom=file&debugContent=test.json
+        * Return a malformed result: http://localhost:3000/api/getFlashcards?debug=true&debugContentFrom=file&debugContent=test-partial.txt
+        * All APIs should support the debug functionality
+        * All APIs that handles POST with a request under debug may need to consider response template capabilities
 
 ### Q: What is the history of JavaScript, ECMAScript and TypeScript
   * Source PDF for archived standard: https://www.ecma-international.org/publications/standards/Ecma-262-arch.htm
