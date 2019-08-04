@@ -302,7 +302,9 @@ www.bestpickreports.com
     * Ran into an issue with ESLint when trying to also lint Typescript: looks like ESLint v6 broke something. Holding off on this for now
     * Started to think about the merit of using nodejs express Lambda for server-side logic, S3 for reactjs client side logic, interface to testing logic outside of the serverless environment. The flashcard could be a great proving ground for this idea
     * ClaudiaJS and AWS Lambda works really well!
-    * When it comes to testing software bound for serverless production environment, it is important to be able test locally, allowing the component to have options to simulate or control dependencies. Leverage the control over local dynamodb for unit tests prior to deployment, leverage the control over aws dynamodb for service tests prior to reaching the end of determinism, leverage contract testing to check that all components are communicating without stubs, prior to reaching end of automation, leverage adhoc manual testing to spot check automation prior to unlocking real value of software. 
+    * 08-03-2019 Local DynamoDB via Node https://medium.com/@Keithweaver_/using-aws-dynamodb-using-node-js-fd17cf1724e0
+    * Express and Lambda work really well! https://www.freecodecamp.org/news/express-js-and-aws-lambda-a-serverless-love-story-7c77ba0eaa35/
+    * When it comes to testing software bound for serverless production environment, it is important to be able test locally, allowing the component to have options to simulate or control dependencies. Leverage the control over local dynamodb for unit tests prior to deployment, leverage the control over aws dynamodb for service tests prior to reaching the end of determinism, leverage contract testing to check that all components are communicating without stubs, prior to reaching end of automation, leverage adhoc manual testing to spot check automation prior to unlocking real value of software. https://www.freecodecamp.org/news/the-best-ways-to-test-your-serverless-applications-40b88d6ee31e/
     * Looked into service virtualization software such as Mountebank, but found it to be not so attractive, since service test would require a separate mock server. Why create a separate server, if each component can build a debug mode? Every microservice should offer an API to enable debug mode, where the responses can be carefully orchestrated for deterministic testing. Once in the debug mode, stored in dynamoDB, the behavior would be driven by a series of orchestrated simulations, not using real data or the real dependencies.
     * If an application has a S3 dependency, let's say to work with video or image, then the application should have ability to have debug mode switch to file system that serves up a much smaller media file. Or the application should have ability to use S3 in a testing partition but with a smaller data set that is handcrafted. Here, I would choose to use file system because it would be the same as local testing, since there is no local S3 yet
     * It might make sense to create separate Lambda to control the data that goes into the debug partition of dynamoDB, since multiple microservice may need dynamoDB orchestration.
@@ -324,7 +326,9 @@ import * as ReactDOM from 'react-dom';
     * incorporate deploy to S3 and open browser to package.json
   * Cool things to check out next
     * Nice tutorial site: https://alligator.io/
+    * Comprehensive list of ES6, 7, 8 features https://www.freecodecamp.org/news/here-are-examples-of-everything-new-in-ecmascript-2016-2017-and-2018-d52fa3b5a70e/, https://medium.com/@dupski/what-major-new-features-were-in-each-javascript-version-what-version-should-i-target-25526c498687, https://github.com/lukehoban/es6features#arrows, https://node.university/blog/7297/es7-es8-post
     * Tell express to configure a fav icon
+    * SAM, ClaudiaJS, Serverless framework are all trying to solve similar problems
     * Design ideas
       * Some examples of debug situations
         * Return a test file: http://localhost:3000/api/getFlashcards?debug=true&debugContentFrom=file&debugContent=test.json
