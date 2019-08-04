@@ -332,3 +332,10 @@ www.bestpickreports.com
 
 ### Q: Check what version of package has been installed globally via npm
   * npm list -g | grep <something>
+
+### Q: How do you cook port shoulder
+  * Mix all the ingredients: garlic powder, etc.. various seasoning
+  * Cut the thick skin on the pork shoulder
+  * Preheat oven to 500, cook for 20 minutes
+  * Reduce heat to 300, and roast for additional 45 minutes per pound. 
+  * https://www.ibreatheimhungry.com/easy-roasted-pork-shoulder-3/
