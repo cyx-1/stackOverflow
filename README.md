@@ -324,6 +324,9 @@ import * as ReactDOM from 'react-dom';
     * upload build content from a react project
     * create an IAM user with permissions
     * incorporate deploy to S3 and open browser to package.json
+  * 08-04-2019 Connected the S3-based ReactJS app to the scalable Lambda-based Flashcard-API!!!
+    * bypassed CORS issue for now by setting permissive headers
+    * express app needed to respond to method OPTION as well, app.all works very well
   * Cool things to check out next
     * Nice tutorial site: https://alligator.io/
     * Comprehensive list of ES6, 7, 8 features https://www.freecodecamp.org/news/here-are-examples-of-everything-new-in-ecmascript-2016-2017-and-2018-d52fa3b5a70e/, https://medium.com/@dupski/what-major-new-features-were-in-each-javascript-version-what-version-should-i-target-25526c498687, https://github.com/lukehoban/es6features#arrows, https://node.university/blog/7297/es7-es8-post
