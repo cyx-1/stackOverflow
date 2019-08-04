@@ -307,6 +307,9 @@ www.bestpickreports.com
     * If an application has a S3 dependency, let's say to work with video or image, then the application should have ability to have debug mode switch to file system that serves up a much smaller media file. Or the application should have ability to use S3 in a testing partition but with a smaller data set that is handcrafted. Here, I would choose to use file system because it would be the same as local testing, since there is no local S3 yet
     * It might make sense to create separate Lambda to control the data that goes into the debug partition of dynamoDB, since multiple microservice may need dynamoDB orchestration.
     * Working with nodemon now to auto-restart express server when there is a change detected, beautiful. https://alligator.io/workflow/nodemon/
+    * Install NVM via homebrew on Desktop, ran into an error "missing xcrun". Fixed via https://apple.stackexchange.com/questions/254380/why-am-i-getting-an-invalid-active-developer-path-when-attempting-to-use-git-a
+    * Created a home repo to store common config files
+    * On desktop: Installed NVM 0.34.0, and then installed node 10.16.0 and along with it npm 6.9.0
   * Cool things to check out next
     * Nice tutorial site: https://alligator.io/
     * Tell express to configure a fav icon
