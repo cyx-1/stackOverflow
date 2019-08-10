@@ -390,7 +390,8 @@ import * as ReactDOM from 'react-dom';
   * 08-07-2019 Skipped
   * 08-08-2019 Assembled power rack
   * 08-09-2019 10 reps of 45lb squat, 6 reps of 95lb squat in the morning, 4 pull ups
-  * 08-10-2019 
+  * 08-10-2019 3 sets of 10 reps of 95lb flat bench press, 3 sets of 10, 8, 7 reps of 95lb inclined bench press, 5 pull-ups
+  * 08-11-2019
 
 ### Q: What has been done to nurture Adrian and Jaydin?
   * 08-04-2019 Looked into TinkerCAD
