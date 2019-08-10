@@ -397,7 +397,7 @@ import * as ReactDOM from 'react-dom';
   * 08-04-2019 Looked into TinkerCAD
   * 08-04-2019 Looked into 3d capture of human face https://www.instructables.com/id/3D-Printing-your-own-full-color-bobblehead-using-1/
   * 08-09-2019 Showed Adrian the concept of source code repository, how VS code could be used to upload changes to code
-  * 08-10-2019 Showed Adrian brief introduction to S3 storage, and how inexpensive it is. Showed Adiran the sandbox-ts-react program, and how it could be uplaoded to S3 as a website. Showed Adrian the concept of StackOverflow (Question and Answering website), and how I am using my own personal StackOverflow-like project to remember things like cooking recipe, programming techniques and workout routines. 
+  * 08-10-2019 Showed Adrian brief introduction to S3 storage, and how inexpensive it is. Showed Adrian the sandbox-ts-react program, and how it could be uplaoded to S3 as a website. Showed Adrian the concept of StackOverflow (Question and Answering website), and how I am using my own personal StackOverflow-like project to remember things like cooking recipe, programming techniques and workout routines. 
 
 ### Q: What makes Adrian happy?
   * ALWAYS- NEED VIDEO GAMES
