@@ -355,10 +355,10 @@ import * as ReactDOM from 'react-dom';
   * 2005 AJAX Asynchronous Javascript And XML https://en.wikipedia.org/wiki/Ajax_(programming), leading to Gmail, Google Map
   * 2009 ES5/ES2009: Supported by all modern browers. introduced strict mode, more Arrays function, JSON parse and stringify, property getter/setter, and Object methods such as to list properties
   * 2014 TypeScript 1.0 Super set of ES6. See History: https://en.wikipedia.org/wiki/Microsoft_TypeScript
-  * 2015 ES6/ES2015:
-  * 2016 ES7/ES2016:
-  * 2017 ES8/ES2017:
-  * 2018 ES9/ES2018:
+  * 2015 ES6/ES2015: promise, template literals, let and const, destructuring, arrow fn, for-of
+  * 2016 ES7/ES2016: array includes, expoentials
+  * 2017 ES8/ES2017: async-await, string padding
+  * 2018 ES9/ES2018: rest and spread operators
   * 2018 TypeScript 3.0
   * 2019 ES10/ES2019:
   * Reference: browser support for different standards: https://www.w3schools.com/js/js_versions.asp
