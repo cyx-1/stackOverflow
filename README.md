@@ -330,6 +330,8 @@ import * as ReactDOM from 'react-dom';
     * bypassed CORS issue for now by setting permissive headers from Express
     * Express app needed to respond to method OPTION as well, app.all works very well
     * Chrome sends OPTION requests because of CORS
+* 08-11-2019
+    * Variable hoisting, IIFE, High-order components, class and prototypes, commonjs vs es modules
 * Cool things to check out next
   * What is export default? What is async-await (alligator.io axios tutorial talks about this)??
   * What are generators? 
@@ -391,13 +393,15 @@ import * as ReactDOM from 'react-dom';
   * 08-08-2019 Assembled power rack
   * 08-09-2019 10 reps of 45lb squat, 6 reps of 95lb squat in the morning, 4 pull ups
   * 08-10-2019 3 sets of 10 reps of 95lb flat bench press, 3 sets of 10, 8, 7 reps of 95lb inclined bench press, 5 pull-ups
-  * 08-11-2019
+  * 08-11-2019 2.4 miles in ~30 minutes, swimming with kids
+  * 08-12-2019 5.5 pull-ups
 
 ### Q: What has been done to nurture Adrian and Jaydin?
   * 08-04-2019 Looked into TinkerCAD
   * 08-04-2019 Looked into 3d capture of human face https://www.instructables.com/id/3D-Printing-your-own-full-color-bobblehead-using-1/
   * 08-09-2019 Showed Adrian the concept of source code repository, how VS code could be used to upload changes to code
   * 08-10-2019 Showed Adrian brief introduction to S3 storage, and how inexpensive it is. Showed Adrian the sandbox-ts-react program, and how it could be uplaoded to S3 as a website. Showed Adrian the concept of StackOverflow (Question and Answering website), and how I am using my own personal StackOverflow-like project to remember things like cooking recipe, programming techniques and workout routines. 
+  * 08-11-2018 Took Adrian and Jaydin to swimming by walking to center count, good conversation along the way, talked about dealing with failures, getting exposures more quickly, reversible decisions, and also played a game of math concepts. Separately, spoke to Adrian about allocation of time, programmer depending on each other's work, and the entertainment vs enslaving attention paid to video games. 
 
 ### Q: What makes Adrian happy?
   * ALWAYS- NEED VIDEO GAMES
