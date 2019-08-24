@@ -332,6 +332,8 @@ import * as ReactDOM from 'react-dom';
     * Chrome sends OPTION requests because of CORS
 * 08-11-2019
     * Variable hoisting, IIFE, High-order components, class and prototypes, commonjs vs es modules
+* 08-17-2019
+    * installed gitlens, cloned git repo from Tyler's react
 * Cool things to check out next
   * What is export default? What is async-await (alligator.io axios tutorial talks about this)??
   * What are generators? 
@@ -395,6 +397,10 @@ import * as ReactDOM from 'react-dom';
   * 08-10-2019 3 sets of 10 reps of 95lb flat bench press, 3 sets of 10, 8, 7 reps of 95lb inclined bench press, 5 pull-ups
   * 08-11-2019 2.4 miles in ~30 minutes, swimming with kids
   * 08-12-2019 5.5 pull-ups
+  * 08-13-2019 rest
+  * 08-14-2019 3 sets of 10 reps 95lb bench press and 3 sets of 45lb barbell plate chin raise
+  * 08-15-2019 3 sets of 10 reps 105lb bench press and 10 reps 45lb barbell plate curl
+  * 08-16-2019 3 pull-ups in the park (grip is not same at home), 2 sets of 10 reps resistance band
 
 ### Q: What has been done to nurture Adrian and Jaydin?
   * 08-04-2019 Looked into TinkerCAD
@@ -407,3 +413,29 @@ import * as ReactDOM from 'react-dom';
   * ALWAYS- NEED VIDEO GAMES
   * Likes writing on google docs
   * likes typing
+
+### Q: What would be a concept map for Modern UI programming
+  * NPM - node package manager
+    * versioning symbol: ^ vs ~
+  * Popular NPM Packages
+    * lodash
+    * moment
+  * Modules systems
+    * CommonJS (useful on the server-side Node development)
+    * RequireJS (useful more on the browser-side)
+    * Browserify (module bundler that works in conjunction with RequireJS)
+    * SystemJS (yet another way to manage modules within browsers)
+    * ES Module (official standard)
+    * Webpack - transformation manager and module bundler (which is easier than the script tag whose order is hard to work with)
+      * entry point
+      * loader - allows Webpack to process more than js files (babel-loader, style-loader, css-loader, svg-inline-loader)
+      * output
+      * plugins - allows task execution after bundle creation (HtmlWebpackPLugin, webpack.EnvironmentPlugin)
+      * mode
+      * webpack-dev-server - enables hot code replace
+  * React gotchas
+    * JSX
+      * use of curly braces for expression (this means a js object already using braces need to be wrapped again using braces)
+      * use of JS to give flow control to reduce API complexity, unlike Angular or Vue that uses special syntax such as ngif or v-if
+      * div vs React.Fragment
+      * capitalization of react component to differentiate from built-in html element
