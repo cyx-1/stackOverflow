@@ -381,10 +381,8 @@ import * as ReactDOM from 'react-dom';
   * npm list -g | grep <something>
 
 ### Q: What has been your workout activities
-<<<<<<< HEAD
   * 08-03-2019 25 pound barbell plate exercise + Flat dumbbell bench press + Resistance band till muscle exhaustion
   * 08-04-2019 Ran 2.4 miles to and back from Stop & Shop
-=======
   * 08-03-2019 25 pound barbell plate composite exercise + 3 sets of Flat dumbbell bench press + Resistance band till muscle exhaustion
   * 08-04-2019 Ran 2.4 miles to and back from Stop & Shop, almost 5 pull ups
   * 08-05-2019 Almost 5 pull ups, 3 sets of 40lb dumbbell incline press, followed by resistance band raise to exhaust upper chest muscle, 1 set of overhead tricep, 1 set (6 reps) of 45lb barbell plate bicep curl, followed by 1 set (7 recps) of 25lb barbell plate bicep curl, and legs were sore from yesterday
@@ -437,4 +435,3 @@ import * as ReactDOM from 'react-dom';
       * use of JS to give flow control to reduce API complexity, unlike Angular or Vue that uses special syntax such as ngif or v-if
       * div vs React.Fragment
       * capitalization of react component to differentiate from built-in html element
->>>>>>> 60e0d4a98a11a1fbc4e08c08aaae5a4ef927d188
