@@ -287,7 +287,7 @@ www.bestpickreports.com
   * Switch between different programs in Mac: Ctrl-Left/Right arrow
 
 ### Q: What has been done to learn programming
-  * August: 
+  * 08-02-2019: 
     * Install Typescript via this command: npm install -g typescript
     * Check the Typescript version: tsc --version
     * If VS Code npm version doesn't match with the npm/node installed in shell, use this command: nvm alias default <version> See: https://stackoverflow.com/a/44707192
@@ -298,14 +298,15 @@ www.bestpickreports.com
     * Stopped using VS Code plugin: prettier
     * Prefer ESLint over TSLint because that's MSFT's direction: https://github.com/Microsoft/TypeScript/issues/29288
     * Don't bother with naming files with es6 extension, since ECMAScript standard changes quickly
+  * 08-03-2019:
     * Started to use SSH key on MBP to avoid annoying popups https://help.github.com/en/articles/connecting-to-github-with-ssh
     * Ran into an issue with ESLint when trying to also lint Typescript: looks like ESLint v6 broke something. Holding off on this for now
     * Started to think about the merit of using nodejs express Lambda for server-side logic, S3 for reactjs client side logic, interface to testing logic outside of the serverless environment. The flashcard could be a great proving ground for this idea
     * ClaudiaJS and AWS Lambda works really well!
-    * 08-03-2019 Local DynamoDB via Node https://medium.com/@Keithweaver_/using-aws-dynamodb-using-node-js-fd17cf1724e0
+    * Tried out Local DynamoDB via Node https://medium.com/@Keithweaver_/using-aws-dynamodb-using-node-js-fd17cf1724e0
     * Express and Lambda work really well! https://www.freecodecamp.org/news/express-js-and-aws-lambda-a-serverless-love-story-7c77ba0eaa35/
     * When it comes to testing software bound for serverless production environment, it is important to be able test locally, allowing the component to have options to simulate or control dependencies. Leverage the control over local dynamodb for unit tests prior to deployment, leverage the control over aws dynamodb for service tests prior to reaching the end of determinism, leverage contract testing to check that all components are communicating without stubs, prior to reaching end of automation, leverage adhoc manual testing to spot check automation prior to unlocking real value of software. https://www.freecodecamp.org/news/the-best-ways-to-test-your-serverless-applications-40b88d6ee31e/
-    * Looked into service virtualization software such as Mountebank, but found it to be not so attractive, since service test would require a separate mock server. Why create a separate server, if each component can build a debug mode? Every microservice should offer an API to enable debug mode, where the responses can be carefully orchestrated for deterministic testing. Once in the debug mode, stored in dynamoDB, the behavior would be driven by a series of orchestrated simulations, not using real data or the real dependencies.
+    * Looked into service virtualization software such as Mountebank, but found it to be not so attractive, since service test would require a separate mock server. Why create a separate server, if each component can build a debug mode? Every microservice should offer an API to enable debug mode, where the responses can be carefully orchestrated for deterministic testing. Once in the debug mode, stored in dynamoDB if deployed, hard-coded if local, the behavior would be driven by a series of orchestrated simulations, not using real data or the real dependencies.
     * If an application has a S3 dependency, let's say to work with video or image, then the application should have ability to have debug mode switch to file system that serves up a much smaller media file. Or the application should have ability to use S3 in a testing partition but with a smaller data set that is handcrafted. Here, I would choose to use file system because it would be the same as local testing, since there is no local S3 yet
     * It might make sense to create separate Lambda to control the data that goes into the debug partition of dynamoDB, since multiple microservice may need dynamoDB orchestration.
     * Working with nodemon now to auto-restart express server when there is a change detected, beautiful. https://alligator.io/workflow/nodemon/
@@ -319,26 +320,34 @@ Use this instead, since React is exported as CommonJS module which does not use 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 ```
-  * 08-04-2019 Deployed a reactjs application to s3. Reference: https://medium.com/serverlessguru/deploy-reactjs-app-with-s3-static-hosting-f640cb49d7e6
+* 08-04-2019
+  * Deployed a reactjs application to s3. Reference: https://medium.com/serverlessguru/deploy-reactjs-app-with-s3-static-hosting-f640cb49d7e6
     * create a s3 bucket with public access
     * upload build content from a react project
     * create an IAM user with permissions
     * incorporate deploy to S3 and open browser to package.json
-  * 08-04-2019 Connected the S3-based ReactJS app to the scalable Lambda-based Flashcard-API!!!
-    * bypassed CORS issue for now by setting permissive headers
-    * express app needed to respond to method OPTION as well, app.all works very well
-  * Cool things to check out next
-    * Nice tutorial site: https://alligator.io/
-    * Comprehensive list of ES6, 7, 8 features https://www.freecodecamp.org/news/here-are-examples-of-everything-new-in-ecmascript-2016-2017-and-2018-d52fa3b5a70e/, https://medium.com/@dupski/what-major-new-features-were-in-each-javascript-version-what-version-should-i-target-25526c498687, https://github.com/lukehoban/es6features#arrows, https://node.university/blog/7297/es7-es8-post
-    * Tell express to configure a fav icon
-    * SAM, ClaudiaJS, Serverless framework are all trying to solve similar problems
-    * Design ideas
-      * Some examples of debug situations
-        * Return a test file: http://localhost:3000/api/getFlashcards?debug=true&debugContentFrom=file&debugContent=test.json
-        * Return response with a delay (30s): http://localhost:3000/api/getFlashcards?debug=true&debugResponseTime=30&debugContentFrom=file&debugContent=test.json
-        * Return a malformed result: http://localhost:3000/api/getFlashcards?debug=true&debugContentFrom=file&debugContent=test-partial.txt
-        * All APIs should support the debug functionality
-        * All APIs that handles POST with a request under debug may need to consider response template capabilities
+  * Connected the S3-based ReactJS app to the scalable Lambda-based Flashcard-API!!!
+    * bypassed CORS issue for now by setting permissive headers from Express
+    * Express app needed to respond to method OPTION as well, app.all works very well
+    * Chrome sends OPTION requests because of CORS
+* 08-11-2019
+    * Variable hoisting, IIFE, High-order components, class and prototypes, commonjs vs es modules
+* 08-17-2019
+    * installed gitlens, cloned git repo from Tyler's react
+* Cool things to check out next
+  * What is export default? What is async-await (alligator.io axios tutorial talks about this)??
+  * What are generators? 
+  * Nice tutorial site: https://alligator.io/
+  * Is there a way to not make Chrome check method OPTION so often
+  * Comprehensive list of ES6, 7, 8 features https://www.freecodecamp.org/news/here-are-examples-of-everything-new-in-ecmascript-2016-2017-and-2018-d52fa3b5a70e/, https://medium.com/@dupski/what-major-new-features-were-in-each-javascript-version-what-version-should-i-target-25526c498687, https://github.com/lukehoban/es6features#arrows, https://node.university/blog/7297/es7-es8-post
+  * Tell express to configure a fav icon
+  * SAM, ClaudiaJS, Serverless framework are all trying to solve similar problems
+  * Design ideas: some examples of debug situations
+    * Return a test file: http://localhost:3000/api/getFlashcards?debug=true&debugContentFrom=file&debugContent=test.json
+    * Return response with a delay (30s): http://localhost:3000/api/getFlashcards?debug=true&debugResponseTime=30&debugContentFrom=file&debugContent=test.json
+    * Return a malformed result: http://localhost:3000/api/getFlashcards?debug=true&debugContentFrom=file&debugContent=test-partial.txt
+    * All APIs should support the debug functionality
+    * All APIs that handles POST with a request under debug may need to consider response template capabilities
 
 ### Q: What is the history of JavaScript, ECMAScript and TypeScript
   * Source PDF for archived standard: https://www.ecma-international.org/publications/standards/Ecma-262-arch.htm
@@ -349,11 +358,12 @@ import * as ReactDOM from 'react-dom';
   * ES4: abandonded, due to disagreement on scope of change
   * 2005 AJAX Asynchronous Javascript And XML https://en.wikipedia.org/wiki/Ajax_(programming), leading to Gmail, Google Map
   * 2009 ES5/ES2009: Supported by all modern browers. introduced strict mode, more Arrays function, JSON parse and stringify, property getter/setter, and Object methods such as to list properties
+  * 2011 ES5.1: ISO approved standard, same as ES5
   * 2014 TypeScript 1.0 Super set of ES6. See History: https://en.wikipedia.org/wiki/Microsoft_TypeScript
-  * 2015 ES6/ES2015:
-  * 2016 ES7/ES2016:
-  * 2017 ES8/ES2017:
-  * 2018 ES9/ES2018:
+  * 2015 ES6/ES2015: promise, template literals, let and const, destructuring, arrow fn, for-of
+  * 2016 ES7/ES2016: array includes, expoentials
+  * 2017 ES8/ES2017: async-await, string padding
+  * 2018 ES9/ES2018: rest and spread operators
   * 2018 TypeScript 3.0
   * 2019 ES10/ES2019:
   * Reference: browser support for different standards: https://www.w3schools.com/js/js_versions.asp
@@ -371,5 +381,60 @@ import * as ReactDOM from 'react-dom';
   * npm list -g | grep <something>
 
 ### Q: What has been your workout activities
+<<<<<<< HEAD
   * 08-03-2019 25 pound barbell plate exercise + Flat dumbbell bench press + Resistance band till muscle exhaustion
   * 08-04-2019 Ran 2.4 miles to and back from Stop & Shop
+=======
+  * 08-03-2019 25 pound barbell plate composite exercise + 3 sets of Flat dumbbell bench press + Resistance band till muscle exhaustion
+  * 08-04-2019 Ran 2.4 miles to and back from Stop & Shop, almost 5 pull ups
+  * 08-05-2019 Almost 5 pull ups, 3 sets of 40lb dumbbell incline press, followed by resistance band raise to exhaust upper chest muscle, 1 set of overhead tricep, 1 set (6 reps) of 45lb barbell plate bicep curl, followed by 1 set (7 recps) of 25lb barbell plate bicep curl, and legs were sore from yesterday
+  * 08-06-2019 25lb barbell plate side pull ups, 25lb barbell plate overhead raise for triceps
+  * 08-07-2019 Skipped
+  * 08-08-2019 Assembled power rack
+  * 08-09-2019 10 reps of 45lb squat, 6 reps of 95lb squat in the morning, 4 pull ups
+  * 08-10-2019 3 sets of 10 reps of 95lb flat bench press, 3 sets of 10, 8, 7 reps of 95lb inclined bench press, 5 pull-ups
+  * 08-11-2019 2.4 miles in ~30 minutes, swimming with kids
+  * 08-12-2019 5.5 pull-ups
+  * 08-13-2019 rest
+  * 08-14-2019 3 sets of 10 reps 95lb bench press and 3 sets of 45lb barbell plate chin raise
+  * 08-15-2019 3 sets of 10 reps 105lb bench press and 10 reps 45lb barbell plate curl
+  * 08-16-2019 3 pull-ups in the park (grip is not same at home), 2 sets of 10 reps resistance band
+
+### Q: What has been done to nurture Adrian and Jaydin?
+  * 08-04-2019 Looked into TinkerCAD
+  * 08-04-2019 Looked into 3d capture of human face https://www.instructables.com/id/3D-Printing-your-own-full-color-bobblehead-using-1/
+  * 08-09-2019 Showed Adrian the concept of source code repository, how VS code could be used to upload changes to code
+  * 08-10-2019 Showed Adrian brief introduction to S3 storage, and how inexpensive it is. Showed Adrian the sandbox-ts-react program, and how it could be uplaoded to S3 as a website. Showed Adrian the concept of StackOverflow (Question and Answering website), and how I am using my own personal StackOverflow-like project to remember things like cooking recipe, programming techniques and workout routines. 
+  * 08-11-2018 Took Adrian and Jaydin to swimming by walking to center count, good conversation along the way, talked about dealing with failures, getting exposures more quickly, reversible decisions, and also played a game of math concepts. Separately, spoke to Adrian about allocation of time, programmer depending on each other's work, and the entertainment vs enslaving attention paid to video games. 
+
+### Q: What makes Adrian happy?
+  * ALWAYS- NEED VIDEO GAMES
+  * Likes writing on google docs
+  * likes typing
+
+### Q: What would be a concept map for Modern UI programming
+  * NPM - node package manager
+    * versioning symbol: ^ vs ~
+  * Popular NPM Packages
+    * lodash
+    * moment
+  * Modules systems
+    * CommonJS (useful on the server-side Node development)
+    * RequireJS (useful more on the browser-side)
+    * Browserify (module bundler that works in conjunction with RequireJS)
+    * SystemJS (yet another way to manage modules within browsers)
+    * ES Module (official standard)
+    * Webpack - transformation manager and module bundler (which is easier than the script tag whose order is hard to work with)
+      * entry point
+      * loader - allows Webpack to process more than js files (babel-loader, style-loader, css-loader, svg-inline-loader)
+      * output
+      * plugins - allows task execution after bundle creation (HtmlWebpackPLugin, webpack.EnvironmentPlugin)
+      * mode
+      * webpack-dev-server - enables hot code replace
+  * React gotchas
+    * JSX
+      * use of curly braces for expression (this means a js object already using braces need to be wrapped again using braces)
+      * use of JS to give flow control to reduce API complexity, unlike Angular or Vue that uses special syntax such as ngif or v-if
+      * div vs React.Fragment
+      * capitalization of react component to differentiate from built-in html element
+>>>>>>> 60e0d4a98a11a1fbc4e08c08aaae5a4ef927d188
