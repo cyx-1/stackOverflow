@@ -370,13 +370,6 @@ import * as ReactDOM from 'react-dom';
 ### Q: Check what version of package has been installed globally via npm
   * npm list -g | grep <something>
 
-### Q: How do you cook port shoulder
-  * Mix all the ingredients: garlic powder, etc.. various seasoning
-  * Cut the thick skin on the pork shoulder
-  * Preheat oven to 500, cook for 20 minutes
-  * Reduce heat to 300, and roast for additional 45 minutes per pound. 
-  * https://www.ibreatheimhungry.com/easy-roasted-pork-shoulder-3/
-
 ### Q: What has been your workout activities
   * 08-03-2019 25 pound barbell plate exercise + Flat dumbbell bench press + Resistance band till muscle exhaustion
   * 08-04-2019 Ran 2.4 miles to and back from Stop & Shop
